@@ -19,10 +19,7 @@ branches:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: 42c3959ac0237e24d48b54e6f7aefb2b7f44bf42
+  github-token: $GITHUB_TOKEN
   keep-history: true
   on:
-    repo: sushobhana/sushobhana.github.io
-    branches:    # ← new!
-      only:      # ← new!
-        - master # ← new!
+    branch: master
