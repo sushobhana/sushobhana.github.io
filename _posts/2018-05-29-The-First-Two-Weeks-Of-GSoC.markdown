@@ -14,13 +14,19 @@ author: sushobhana
 description: The First two weeks of my summer with OpenAstronomy.
 ---
 
-![](https://cdn-images-1.medium.com/max/1300/1*ilEYYOomG-6Xmj4SoZ2S2g.png)
+<div class="side-by-side">
+    <div class="toleft">
+        <img class="image" src="https://cdn-images-1.medium.com/max/1300/1*ilEYYOomG-6Xmj4SoZ2S2g.png" alt="Alt Text">
+    </div>
 
-Hey, it’s Sushobhana. Sushobhana Patra. That’s right. Don’t adjust your…whatever
-device you’re reading this on. It’s me, live and on medium. No return
-engagements, no encore, and this time, absolutely no requests. Get a snack.
-Settle in. Because I’m about to tell you the story of my summer. More
-specifically, what code did I develop this week under GSoC.
+    <div class="toright">
+        <p>Hey, it’s Sushobhana. Sushobhana Patra. That’s right. Don’t adjust your…whatever
+        device you’re reading this on. It’s me, live and on medium. No return
+        engagements, no encore, and this time, absolutely no requests. Get a snack.
+        Settle in. Because I’m about to tell you the story of my summer. More
+        specifically, what code did I develop this week under GSoC.</p>
+    </div>
+</div>
 
 The coding period with astropy’s regions has started since the last two weeks.
 It’s has been amazing since then.

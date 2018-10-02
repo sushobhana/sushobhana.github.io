@@ -1,10 +1,16 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-02T23:37:48+05:30</updated><id>http://localhost:4000/</id><title type="html">Sushobhana Patra</title><subtitle>Sushobhana Patra's personal blog site</subtitle><entry><title type="html">The First Two Weeks Of GSoC</title><link href="http://localhost:4000/The-First-Two-Weeks-Of-GSoC/" rel="alternate" type="text/html" title="The First Two Weeks Of GSoC" /><published>2018-05-29T22:44:00+05:30</published><updated>2018-05-29T22:44:00+05:30</updated><id>http://localhost:4000/The-First-Two-Weeks-Of-GSoC</id><content type="html" xml:base="http://localhost:4000/The-First-Two-Weeks-Of-GSoC/">&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1300/1*ilEYYOomG-6Xmj4SoZ2S2g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-03T00:04:26+05:30</updated><id>http://localhost:4000/</id><title type="html">Sushobhana Patra</title><subtitle>Sushobhana Patra's personal blog site</subtitle><entry><title type="html">The First Two Weeks Of GSoC</title><link href="http://localhost:4000/The-First-Two-Weeks-Of-GSoC/" rel="alternate" type="text/html" title="The First Two Weeks Of GSoC" /><published>2018-05-29T22:44:00+05:30</published><updated>2018-05-29T22:44:00+05:30</updated><id>http://localhost:4000/The-First-Two-Weeks-Of-GSoC</id><content type="html" xml:base="http://localhost:4000/The-First-Two-Weeks-Of-GSoC/">&lt;div class=&quot;side-by-side&quot;&gt;
+    &lt;div class=&quot;toleft&quot;&gt;
+        &lt;img class=&quot;image&quot; src=&quot;https://cdn-images-1.medium.com/max/1300/1*ilEYYOomG-6Xmj4SoZ2S2g.png&quot; alt=&quot;Alt Text&quot; /&gt;
+    &lt;/div&gt;
 
-&lt;p&gt;Hey, it’s Sushobhana. Sushobhana Patra. That’s right. Don’t adjust your…whatever
-device you’re reading this on. It’s me, live and on medium. No return
-engagements, no encore, and this time, absolutely no requests. Get a snack.
-Settle in. Because I’m about to tell you the story of my summer. More
-specifically, what code did I develop this week under GSoC.&lt;/p&gt;
+    &lt;div class=&quot;toright&quot;&gt;
+        &lt;p&gt;Hey, it’s Sushobhana. Sushobhana Patra. That’s right. Don’t adjust your…whatever
+        device you’re reading this on. It’s me, live and on medium. No return
+        engagements, no encore, and this time, absolutely no requests. Get a snack.
+        Settle in. Because I’m about to tell you the story of my summer. More
+        specifically, what code did I develop this week under GSoC.&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 
 &lt;p&gt;The coding period with astropy’s regions has started since the last two weeks.
 It’s has been amazing since then.&lt;/p&gt;
@@ -96,11 +102,9 @@ summer under the umbrella organization Open Astronomy.I will be spending the
 next three months improving and implementing new functionalities to the
 &lt;strong&gt;regions&lt;/strong&gt;, an &lt;strong&gt;astropy&lt;/strong&gt; affiliated python package. I will be explaining all
 about this and my project with complete details in my further posts. Here is a
-link to a short summary :&lt;/p&gt;
+link to the &lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#5210718853398528&quot;&gt;project idea&lt;/a&gt; .&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#5210718853398528&quot;&gt;https://summerofcode.withgoogle.com/projects/#5210718853398528&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;If you want to dive deeper , here is the link to the project proposal :&lt;/p&gt;
+&lt;p&gt;If you want to dive deeper, this is the &lt;a href=&quot;https://drive.google.com/file/d/19R7qbI-AQA85FgzJfiiMbihB1DpB1Bqr/view?usp=sharing&quot;&gt;project proposal&lt;/a&gt; that I had submitted.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -289,7 +293,17 @@ the challenges ahead!!!&lt;/p&gt;
 
 &lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-raw&quot; data-lang=&quot;raw&quot;&gt;{ % gist sergiokopplin/91ff4220480727b47224245ee2e9c291 % }&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
 
-&lt;p&gt;true&lt;script src=&quot;https://gist.github.com/sergiokopplin/91ff4220480727b47224245ee2e9c291.js&quot;&gt; &lt;/script&gt;&lt;/p&gt;
+&lt;noscript&gt;&lt;pre&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+    &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+    &amp;lt;title&amp;gt;Just a Test!&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;h1&amp;gt;Working!&amp;lt;/h1&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/pre&gt;&lt;/noscript&gt;
+&lt;script src=&quot;https://gist.github.com/sergiokopplin/91ff4220480727b47224245ee2e9c291.js&quot;&gt; &lt;/script&gt;
 
 &lt;hr /&gt;
 
