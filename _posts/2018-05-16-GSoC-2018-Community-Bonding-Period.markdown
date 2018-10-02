@@ -22,11 +22,9 @@ summer under the umbrella organization Open Astronomy.I will be spending the
 next three months improving and implementing new functionalities to the
 **regions**, an **astropy** affiliated python package. I will be explaining all
 about this and my project with complete details in my further posts. Here is a
-link to a short summary :
+link to the [project idea](https://summerofcode.withgoogle.com/projects/#5210718853398528) .
 
-[https://summerofcode.withgoogle.com/projects/#5210718853398528](https://summerofcode.withgoogle.com/projects/#5210718853398528)
-
-If you want to dive deeper , here is the link to the project proposal :
+If you want to dive deeper, this is the [project proposal](https://drive.google.com/file/d/19R7qbI-AQA85FgzJfiiMbihB1DpB1Bqr/view?usp=sharing) that I had submitted.
 
 *****
 
