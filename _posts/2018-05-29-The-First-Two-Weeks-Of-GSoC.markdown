@@ -1,9 +1,9 @@
 ---
 title: "The First Two Weeks Of GSoC"
 layout: post
-date: 2018-05-16 22:44
-image: /assets/images/markdown.jpg
-headerImage: false
+date: 2018-05-29 22:44
+image: /assets/images/astro.png
+headerImage: true
 tag:
 - gsoc-2018
 - astronomy
@@ -11,7 +11,7 @@ tag:
 star: true
 category: blog
 author: sushobhana
-description: The beginning of my summer with OpenAstronomy.
+description: The First two weeks of my summer with OpenAstronomy.
 ---
 
 ![](https://cdn-images-1.medium.com/max/1300/1*ilEYYOomG-6Xmj4SoZ2S2g.png)

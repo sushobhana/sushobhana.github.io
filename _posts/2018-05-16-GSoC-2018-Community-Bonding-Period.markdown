@@ -2,8 +2,8 @@
 title: "GSoC-2018 - Community Bonding Period"
 layout: post
 date: 2018-05-16 22:44
-image: /assets/images/markdown.jpg
-headerImage: false
+image: /assets/images/astro.png
+headerImage: true
 tag:
 - gsoc-2018
 - astronomy

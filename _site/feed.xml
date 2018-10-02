@@ -1,4 +1,174 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-02T14:50:43+05:30</updated><id>http://localhost:4000/</id><title type="html">Sushobhana Patra</title><subtitle>A Personal site about technology and stuff related</subtitle><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00+05:30</published><updated>2016-02-24T22:48:00+05:30</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2018-10-02T23:37:48+05:30</updated><id>http://localhost:4000/</id><title type="html">Sushobhana Patra</title><subtitle>Sushobhana Patra's personal blog site</subtitle><entry><title type="html">The First Two Weeks Of GSoC</title><link href="http://localhost:4000/The-First-Two-Weeks-Of-GSoC/" rel="alternate" type="text/html" title="The First Two Weeks Of GSoC" /><published>2018-05-29T22:44:00+05:30</published><updated>2018-05-29T22:44:00+05:30</updated><id>http://localhost:4000/The-First-Two-Weeks-Of-GSoC</id><content type="html" xml:base="http://localhost:4000/The-First-Two-Weeks-Of-GSoC/">&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1300/1*ilEYYOomG-6Xmj4SoZ2S2g.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Hey, it’s Sushobhana. Sushobhana Patra. That’s right. Don’t adjust your…whatever
+device you’re reading this on. It’s me, live and on medium. No return
+engagements, no encore, and this time, absolutely no requests. Get a snack.
+Settle in. Because I’m about to tell you the story of my summer. More
+specifically, what code did I develop this week under GSoC.&lt;/p&gt;
+
+&lt;p&gt;The coding period with astropy’s regions has started since the last two weeks.
+It’s has been amazing since then.&lt;/p&gt;
+
+&lt;p&gt;What is Astropy? It is a community effort to provide core packages for astronomy
+using python. The core package contains tons of various classes, utilities, and
+a packaging framework intended to provide commonly-used astronomy tools. Just a
+random fact, there are currently 10,000 active github original repositories
+using Astropy out of which more than 1000 are on PyPI. Isn’t it amazing?&lt;/p&gt;
+
+&lt;p&gt;Regions is an &lt;em&gt;astropy affliated package&lt;/em&gt; which deals with handling
+regions(off-course!). Now, what are regions ? It is any considerable and
+connected part of a space or surface studied in astronomy. It is basically used
+to define an part of an image while analyzing and processing them.So, it
+provides classes to handle regions with fixed shapes either using pixel or
+celestial coordinates. There are several standard formats to express regions and
+our package should be able to read as well as interpret those so that it gives a
+common interface to many users.&lt;/p&gt;
+
+&lt;p&gt;CASA , the &lt;em&gt;Common Astronomy Software Applications&lt;/em&gt; package, is a software which
+focuses on various kinds of data processing from various radioastronomical
+telescopes. It has several image processing tools and has CRTF format, CASA
+Regions Text Format which provides flexible region definitions syntax for their
+internal use. Now, being able to read this file format in the regions package
+will gradually encourage/help the CASA users to experience similar tools that
+Astropy provides.&lt;/p&gt;
+
+&lt;p&gt;My Project’s Title , “CASA CRTF REGION FILE HANDLING” pretty much sums off the
+overall objective. Not only I have to implement an efficient Parser for reading
+that file format, but also to implement the CRTF regions which are not presently
+available in regions package. The CASA’s regions apart from describing the
+euclidean geometry, also has spectral dimensions (the third dimension) which
+needs to be implemented. The regions package aims to support various file
+format(DS9 is already available) . Most of the parts are incontrovertible with
+one another and it aims to provide interfaces and methods to do so.&lt;/p&gt;
+
+&lt;p&gt;For the first two weeks , I was focused to write a parser to convert CRTF region
+strings to &lt;code class=&quot;highlighter-rouge&quot;&gt;Shape&lt;/code&gt; objects. &lt;code class=&quot;highlighter-rouge&quot;&gt;Shape&lt;/code&gt; is an intermediate class which holds
+sufficient information about the region from the deserialization of specific
+file format. It contains method to convert them to &lt;code class=&quot;highlighter-rouge&quot;&gt;region&lt;/code&gt; objects. I have
+mostly used python’s regular expressions . There are few reason why I chose so.
+First, It is an awesome, tiny, highly specialized language which is very
+powerful. It lets you do all type of godly things with strings such as helps us
+to match certain part of any crazy strings(people even parse html and xml codes
+with this) and also extract particular parts of it. So, it does lexical analysis
+very well. Since CRTF has a very simple one line syntax, the syntactical
+analysis isn’t that big a deal. And the regex engine of python is completely
+written in C which makes it super efficient. &lt;code class=&quot;highlighter-rouge&quot;&gt;re&lt;/code&gt; module seemed to be a perfect
+match for this job. Oh!.. I forgot another reason, regex expressions are
+difficult to understand to anyone who hasn’t seen this before, this makes me
+look like a super coder!&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;https://cdn-images-1.medium.com/max/1040/1*1wpnzKE3PuhrQMzZrQXufw.jpeg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Actually, it contains a lot of meta-characters which have special meaning to
+it.There are ways to dissect the strings by dividing the RE into groups. There
+are many cool features such as look-ahead asssertions , greedy vs non-greedy
+search, splitting , replacing to name a few. If you are in any way interested in
+learning them, there is an official python HOWTO (
+&lt;a href=&quot;https://docs.python.org/3/howto/regex.html&quot;&gt;https://docs.python.org/3/howto/regex.html&lt;/a&gt;).It
+is crisp, clear ,explains most of the features of &lt;code class=&quot;highlighter-rouge&quot;&gt;re&lt;/code&gt; module and a perfect
+tutorial for beginners.&lt;/p&gt;
+
+&lt;p&gt;Now, the two weeks have been pretty rough,with the end-semester exams and all,
+still, I have not let myself hamper the development pace.I implemented the whole
+CRTF parser. Apart from a few issues such as mapping of CASA’s coordinate
+systems to that of Astropy’s that needs to be addressed , it is almost
+complete.I have also added documentations and tests to it. Here is the link to
+the pull request:
+&lt;a href=&quot;https://github.com/astropy/regions/pull/173&quot;&gt;https://github.com/astropy/regions/pull/173&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This week I am focusing on to handle meta attributes of the regions. There are
+currently no documentations present so as to what kind of keys it allows and
+also their domains. So, we have decided to work on creating a &lt;code class=&quot;highlighter-rouge&quot;&gt;dict&lt;/code&gt; subclass so
+that validity of the keys and values can be checked. We also have to make sure
+that it is compatible with all the file formats that are present.Second thing
+would be to work on serialization of DS9 region. Currently, it doesn’t use the
+&lt;code class=&quot;highlighter-rouge&quot;&gt;shape&lt;/code&gt; layer which is kind of important if we want to convert from one file
+format to another, such as CRTF to DS9 or vice-versa. Next thing would be to
+implement regions that are currently not available such as symbol, text, vector,
+box.&lt;/p&gt;
+
+&lt;p&gt;Thats all for now, I just hope that I don’t get baked up in this 43 degree
+Celsius hot and dry summer.&lt;/p&gt;</content><author><name>sushobhana</name></author><category term="blog" /><category term="gsoc-2018" /><category term="astronomy" /><category term="programming" /><summary type="html"></summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/astro.png" /></entry><entry><title type="html">GSoC-2018 - Community Bonding Period</title><link href="http://localhost:4000/GSoC-2018-Community-Bonding-Period/" rel="alternate" type="text/html" title="GSoC-2018 - Community Bonding Period" /><published>2018-05-16T22:44:00+05:30</published><updated>2018-05-16T22:44:00+05:30</updated><id>http://localhost:4000/GSoC-2018-Community-Bonding-Period</id><content type="html" xml:base="http://localhost:4000/GSoC-2018-Community-Bonding-Period/">&lt;p&gt;Hi World,&lt;/p&gt;
+
+&lt;p&gt;I am a 19 year old undergrad student from India majoring in Computer Science. I
+have been selected in &lt;strong&gt;Google Summer Of Code&lt;/strong&gt; as a student developer this
+summer under the umbrella organization Open Astronomy.I will be spending the
+next three months improving and implementing new functionalities to the
+&lt;strong&gt;regions&lt;/strong&gt;, an &lt;strong&gt;astropy&lt;/strong&gt; affiliated python package. I will be explaining all
+about this and my project with complete details in my further posts. Here is a
+link to a short summary :&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://summerofcode.withgoogle.com/projects/#5210718853398528&quot;&gt;https://summerofcode.withgoogle.com/projects/#5210718853398528&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;If you want to dive deeper , here is the link to the project proposal :&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;You must be thinking, why didn’t I just describe my project and dive into
+technicalities?? Well, we have the whole summer to discuss that !&lt;/p&gt;
+
+&lt;p&gt;In this post, I just want to focus on the GSoC part and how much this program
+means to me. For those of you don’t know about GSoC, it is an international
+program sponsored by google where students are paid over to work on various open
+source projects over their summer vacations.&lt;/p&gt;
+
+&lt;p&gt;You get to work on projects used by thousands of people, interacting closely
+with the open source community and you are paid for this! I couldn’t think of a
+better summer. If you are a university student who happens to love programming
+and solving bugs you might consider applying for GSoC next year.&lt;/p&gt;
+
+&lt;p&gt;The journey so far in the astropy community has been splendid.I initially
+started contributing a few PRs to the astropy core around december.The community
+was very welcoming and patient enough to review my PR for several iterations.I
+was completely new to git and github’s workflow and was working on a public code
+base for the first time. I was simultaneously learning Python . And to add on
+top of that I was completely new to the jargons used by the astronomers.It all
+had a very steep learning curve , but it was worth it. I learnt a lot, starting
+from documenting the code to writing test cases for it. I understood how to
+write clean codes with better design and how much important it is to write
+readable code. These things may seem trivial to many but avoiding premature
+optimization is an art in itself!!&lt;/p&gt;
+
+&lt;p&gt;Jokes Apart, I am grateful to taldcroft and Simon for initially reviewing my PRs
+without losing their temper!😀The initial kick-start was very important for me.&lt;/p&gt;
+
+&lt;p&gt;When I started looking for projects after the org announcements, the regions
+project seemed very interesting to me and I started writing a proposal for it. I
+would like to thank Adam Ginsburg(also my mentor), the project lead for regions
+package who responded to each of my queries , helping me understand the scope of
+the project. He was also kind enough to review my proposal for a couple of
+times. I would also like to thank Miguel , my second mentor for reviewing the
+proposal and providing me with valuable inputs.&lt;/p&gt;
+
+&lt;p&gt;I would also like to thank Brigitta and David , the org admins for making this
+whole process easier.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The results were announced on 23rd April,2018 .The community-bonding period
+began and ended on 14th May. I was on cloud nine for a couple of days and it
+took me around a week to actually sync that in. This was the time to learn more
+about my community , setting developement installs , chalking out the objectives
+and learning new things that I might need while coding away this summer. I
+pretty much did everything in these three weeks. Also I have my end semester
+exam starting this week , so I ensured I started out little early so that I
+could be on schedule.&lt;/p&gt;
+
+&lt;p&gt;The first part of my project is to implement CRTF File reader(It is a region
+file format having a specific syntax). This needed some regular expressions for
+string matching. Regular expression is an awesome language for string matching
+and is provided in Python through the re module. I spent some time understanding
+this and started writing the skeleton of the parser.&lt;/p&gt;
+
+&lt;p&gt;The parser is close to complete now. There are a couple of issues that needs to
+be addressed along with writing tests. I will be writing more about how I
+approached to the design and my experience with regular expression, in the next
+week along with my PR details.&lt;/p&gt;
+
+&lt;p&gt;So far it is all nice. The experience has been amazing . Looking forward to all
+the challenges ahead!!!&lt;/p&gt;
+
+&lt;p&gt;Adieu!&lt;/p&gt;</content><author><name>sushobhana</name></author><category term="blog" /><category term="gsoc-2018" /><category term="astronomy" /><category term="programming" /><summary type="html">Hi World,</summary><media:thumbnail xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:4000/assets/images/astro.png" /></entry><entry><title type="html">Markdown Extra Components</title><link href="http://localhost:4000/markdown-extra-components/" rel="alternate" type="text/html" title="Markdown Extra Components" /><published>2016-02-24T22:48:00+05:30</published><updated>2016-02-24T22:48:00+05:30</updated><id>http://localhost:4000/markdown-extra-components</id><content type="html" xml:base="http://localhost:4000/markdown-extra-components/">&lt;h2 id=&quot;summary&quot;&gt;Summary:&lt;/h2&gt;
 
 &lt;p&gt;You can pick as item to see how to apply in markdown.&lt;/p&gt;
 

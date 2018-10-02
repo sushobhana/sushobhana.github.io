@@ -3,7 +3,7 @@ name: Sushobhana Patra
 bio: A sturdy and stubborn programmer
 
 # twitter summary info
-description: A Personal site about technology and stuff related
+description: Sushobhana Patra's personal blog site
 
 # if it's an external image, update below for true
 # better with square images
@@ -60,12 +60,6 @@ authors:
         external-image: false
         picture: assets/images/prof.jpg
         twitter: sushobhana
-    jamesfoster:
-        name: James Foster
-        bio: A Man who develops software with coffee
-        external-image: false
-        picture: assets/images/james.jpg
-        twitter: jamesfoster
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
