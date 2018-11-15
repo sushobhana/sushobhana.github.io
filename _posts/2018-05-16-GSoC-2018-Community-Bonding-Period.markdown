@@ -17,10 +17,10 @@ description: The beginning of my summer with OpenAstronomy.
 Hi World,
 
 I am a 19 year old undergrad student from India majoring in Computer Science. I
-have been selected in **Google Summer Of Code** as a student developer this
+have been selected in [**Google Summer Of Code**](https://summerofcode.withgoogle.com/) as a student developer this
 summer under the umbrella organization Open Astronomy.I will be spending the
 next three months improving and implementing new functionalities to the
-**regions**, an **astropy** affiliated python package. I will be explaining all
+[**regions**](https://astropy-regions.readthedocs.io/en/latest/), an [**astropy**](http://www.astropy.org/) affiliated python package. I will be explaining all
 about this and my project with complete details in my further posts. Here is a
 link to the [project idea](https://summerofcode.withgoogle.com/projects/#5210718853398528) .
 
